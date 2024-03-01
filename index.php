@@ -2,71 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Tela de Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3552002ac3.js" crossorigin="anonymous"></script>
+    <style typle="text/css">
+        #tamanho{
+            width:350px;
+            -webkit-box-shadow: 10px 10px 28px -8px rgba(194,194,194,1);
+            -moz-box-shadow: 10px 10px 28px -8px rgba(194,194,194,1);
+            box-shadow: 10px 10px 28px -8px rgba(194,194,194,1);
+        }
+    </style>
 </head>
 <body>
-    <div class="container" style="margin-top:100px">
-    <div class="row">
-
-
-        <div class="col-sm-6">
-            <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Adicionar Produto</h5>
-                <p class="card-text">Opção para adicionar produtos em nosso estoque.</p>
-                <a href="adicionar_produto.php" class="btn btn-primary">Cadastrar Produto</a>
+    <div class="container" id="tamanho" style="margin-top: 100px; border-radius:15px; border: 2px solid #f3f3f3">
+    <div style="padding:10px">
+    <center>
+        <img src="imagem/cadeado.jpg" width="125px"  heigth="125px">
+    </center>
+ 
+        <form >
+            <div class="form-group">
+                <label> Usuário:</label>
+                <input type="text" name="usuario" class="form-control" placeholder="Usuário" autocomplete="off" required>
             </div>
+            <div class="form-group">
+                <label> Senha:</label>
+                <input type="password" name="senha" class="form-control" placeholder="Senha" autocomplete="off" required>
             </div>
+        </form>
+        <br>
+        <div style="text-align: right;">
+        <button  type="submit" class="btn btn-sm btn-success">Entrar</button>
         </div>
-        <div class="col-sm-6">
-            <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Lista de Produtos</h5>
-                <p class="card-text">Visualizar, editar, e excluir os produtos.</p>
-                <a href="listar_produtos.php" class="btn btn-primary">Produtos</a>
-            </div>
-            </div>
-        </div>
+    </div>
+    </div>
 
-
-
-
-
-
-
-
-        <div class="col-sm-6" style="margin-top: 20px">
-            <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Adicionar Categoria</h5>
-                <p class="card-text">Opção para adicionar categoria de produtos.</p>
-                <a href="adicionar_categoria.php" class="btn btn-primary">Cadastrar Categoria</a>
-            </div>
-            </div>
-        </div>
-        <div class="col-sm-6" style="margin-top: 20px">
-            <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Adicionar Fornecedor</h5>
-                <p class="card-text">Opção para adicionar fornecedores.</p>
-                <a href="adicionar_fornecedor.php" class="btn btn-primary">Cadastrar Fornecedores</a>
-            </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-    </div>    
-</div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</body>
 </body>
 </html>
