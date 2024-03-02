@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3552002ac3.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Menu</title>
 </head>
 <body>
 <div class="container" style="width: 400px;  margin-top: 40px">
     <div style="text-align: right">
-        <a href="menu.php" role="button" class="btn btn-sm btn-primary">Voltar</a>
+        <a href="index.php" role="button" class="btn btn-sm btn-primary">Voltar</a>
     </div>
     <h4>Cadastro de Usuário</h4>
-    <form action="_insert_usuario.php" method="post">
+    <form action="_insert_usuario_externo.php" method="post">
         <div class="form-group">
             <label >Nome do Usuário</label>
             <input type="text" name="nommeusuario" class="form-control" required autocomplete="off" placeholder="Nome completo">
@@ -32,14 +32,7 @@
             <input type="password" name="senhausuario2" class="form-control" required autocomplete="off" placeholder="Repetir senha" oninput="validaSenha(this)">
             <small>Precisa ser igual a senha digitada acima.</small>
         </div>
-            <div class="form-group">
-                <label >Nível  de Acesso</label>
-                <select name="nivelusuario" class="form-control" >                  
-                        <option value="1" >Administrador</option>
-                        <option value="2">Funcionário</option>                  
-                        <option value="3">Conferente</option>                 
-                </select>
-            </div><br>
+            <br>
             <div style="text-align:right">
                 <button type="submit" class="btn btn-sm btn-success">Cadastrar</button>
             </div>
