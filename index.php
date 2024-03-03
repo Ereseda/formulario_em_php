@@ -23,7 +23,7 @@
         <img src="imagem/cadeado.jpg" width="125px"  heigth="125px">
     </center>
  
-        <form >
+        <form  action="index1.php" method="post">
             <div class="form-group">
                 <label> Usuário:</label>
                 <input type="text" name="usuario" class="form-control" placeholder="Usuário" autocomplete="off" required>
@@ -32,11 +32,13 @@
                 <label> Senha:</label>
                 <input type="password" name="senha" class="form-control" placeholder="Senha" autocomplete="off" required>
             </div>
-        </form>
+      
         <br>
         <div style="text-align: right;">
         <button  type="submit" class="btn btn-sm btn-success">Entrar</button>
         </div>
+
+        </form>
     </div>
     </div>
         <div style="margin-top: 10px;">
