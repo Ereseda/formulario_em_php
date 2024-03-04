@@ -1,5 +1,6 @@
-Criação de  formulário de cadastro em :
-PHP
-Bootstrap
-HTML5
-CSS3
+CRUD BÁSICO com Bootstrap5, PHP e MySql:
+
+* Inserir;
+* ditar;
+* Excluir.
+
